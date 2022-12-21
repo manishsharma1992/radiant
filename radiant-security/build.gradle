@@ -1,0 +1,17 @@
+dependencies {
+	//Spring Boot Dependencies
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	implementation 'org.apache.commons:commons-lang3'
+	
+	implementation project(':radiant-domain')
+	
+	//JWT Dependency
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	
+	//Lombok Dependency
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}
