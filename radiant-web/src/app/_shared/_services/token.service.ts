@@ -10,7 +10,7 @@ export class TokenService {
 
   constructor() { }
 
-  ignOut() {
+  signOut() {
     window.sessionStorage.clear();
   }
 

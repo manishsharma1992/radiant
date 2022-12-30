@@ -24,6 +24,8 @@ public class UserDetailsImpl implements UserDetails {
 	
 	private String password;
 	
+	private String displayName;
+	
 	private Collection<? extends GrantedAuthority> authorities;
 	
 	public static UserDetailsImpl build(User user) {
@@ -32,6 +34,7 @@ public class UserDetailsImpl implements UserDetails {
 		return UserDetailsImpl.builder()
 				.username(user.getUsername())
 				.password(user.getPassword())
+				.displayName(user.getDisplayName())
 				.authorities(authorities)
 				.build();
 	}

@@ -50,6 +50,7 @@ public class LoginController {
 		 return ResponseEntity.ok(JwtResponse.builder()
 				 .token(jwt)
 				 .username(userDetails.getUsername())
+				 .displayName(userDetails.getDisplayName())
 				 .roles(roles)
 				 .build());
 	}

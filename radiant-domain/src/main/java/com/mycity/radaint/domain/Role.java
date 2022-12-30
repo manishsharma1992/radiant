@@ -5,12 +5,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@Document("role")
+@AllArgsConstructor
+@NoArgsConstructor
+@Document("roles")
 public class Role {
 	
 	@Id
