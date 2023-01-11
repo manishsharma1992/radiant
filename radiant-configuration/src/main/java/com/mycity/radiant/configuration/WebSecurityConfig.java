@@ -22,7 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.mycity.radiant.security.jwt.AuthEntryPointJwt;
 import com.mycity.radiant.security.jwt.AuthTokenFilter;
-import com.mycity.radiant.security.services.UserDetailServiceImpl;
+import com.mycity.radiant.security.services.impl.UserDetailServiceImpl;
 
 @Configuration
 @EnableWebSecurity

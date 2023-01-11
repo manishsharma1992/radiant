@@ -1,4 +1,4 @@
-package com.mycity.radaint.domain;
+package com.mycity.radiant.security.domain;
 
 import java.util.Collection;
 import java.util.Map;
@@ -9,6 +9,7 @@ import org.springframework.security.oauth2.core.oidc.OidcUserInfo;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
+import com.mycity.radaint.domain.User;
 import com.mycity.radaint.domain.utils.GeneralUtils;
 
 public class LocalUser extends org.springframework.security.core.userdetails.User implements OAuth2User, OidcUser {

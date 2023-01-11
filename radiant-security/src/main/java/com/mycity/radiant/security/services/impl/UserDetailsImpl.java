@@ -1,4 +1,4 @@
-package com.mycity.radiant.security.services;
+package com.mycity.radiant.security.services.impl;
 
 import java.util.Collection;
 import java.util.List;
@@ -26,6 +26,8 @@ public class UserDetailsImpl implements UserDetails {
 	
 	private String displayName;
 	
+	private String provider;
+	
 	private Collection<? extends GrantedAuthority> authorities;
 	
 	public static UserDetailsImpl build(User user) {
@@ -35,6 +37,7 @@ public class UserDetailsImpl implements UserDetails {
 				.username(user.getUsername())
 				.password(user.getPassword())
 				.displayName(user.getDisplayName())
+				.provider(user.getProvider())
 				.authorities(authorities)
 				.build();
 	}

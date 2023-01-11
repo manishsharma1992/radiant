@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mycity.radaint.domain.payload.request.LoginRequest;
 import com.mycity.radaint.domain.payload.response.JwtResponse;
 import com.mycity.radiant.security.jwt.JwtUtils;
-import com.mycity.radiant.security.services.UserDetailsImpl;
+import com.mycity.radiant.security.services.impl.UserDetailsImpl;
 
 import lombok.extern.slf4j.Slf4j;
 
